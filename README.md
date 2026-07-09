@@ -22,3 +22,8 @@ x(t + dt) = x(t) + vx(t + dt) * dt
 y(t + dt) = y(t) + vy(t + dt) * dt
 
 The loop runs sequentially across the time array and applies a condition to terminate updates once the projectile's vertical component drops below the ground (y < 0).
+
+
+requirements---
+numpy
+matplotlib
