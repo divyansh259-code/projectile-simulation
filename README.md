@@ -27,3 +27,4 @@ The loop runs sequentially across the time array and applies a condition to term
 requirements---
 numpy
 matplotlib
+<img width="765" height="469" alt="image" src="https://github.com/user-attachments/assets/815b6c07-37c2-4d13-8aa2-ef641b0e67d4" />
