@@ -31,3 +31,21 @@ def trajectory(v0, theta, dragcoeff=0.1, dt=0.01):
     yideal = vy0*t - 0.5*g*t**2 #ideal w/o drag
 
     return x, y, t, xideal, yideal
+
+
+
+import matplotlib.pyplot as plt
+from project import trajectory
+
+x_drag, y_drag, time, x_id, y_id = trajectory(v0=45, theta=45, dragcoeff=0.15)
+
+plt.figure(figsize=(9, 5))
+plt.plot(x_id, y_id, label='Vacuum (Ideal)', color='black', linestyle='--')
+plt.plot(x_drag, y_drag, label='With Air Resistance', color='teal', linewidth=2)
+
+plt.title('Projectile Motion Simulation', fontsize=12, fontweight='bold')
+plt.xlabel('Distance (m)')
+plt.ylabel('Height (m)')
+plt.grid(True, alpha=0.3)
+plt.legend()
+plt.show()
